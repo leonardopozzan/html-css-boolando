@@ -7,7 +7,7 @@
 }
 :root{
     --orange: #ff6801;
-    --black: black;
+    --black: #0E0E0E;
     --green: green;
     --red: red;
     --white: white;
@@ -18,7 +18,8 @@
     clear: both;
 }
 .container{
-    max-width: 1100px;
+    max-width: 1200px;
+    min-width: 800px;
     margin: auto;
 }
 .flex{
