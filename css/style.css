@@ -31,6 +31,9 @@
     position: fixed;
     top: 0;
 }
+header .z_index{
+    z-index: 500;
+}
 header .bg_orange{
     background-color: var(--orange);
     width: 100%;
@@ -47,11 +50,79 @@ header ul.flex li{
 header nav a{
     text-decoration: none;
     color: var(--white);
-    padding-right: 10px;
+    padding-right: 12px;
     font-weight: bold;
+    font-size: 18px;
+    display: block;
 }
 header nav .logo{
     height: 35px;
 }
 
 /* articoli in vendita */
+.margin_top{
+    margin-top: 130px;
+}
+.item{
+    width: calc((100% - 30px) / 3);
+    position: relative;
+    float: left;
+    margin-bottom: 50px;
+}
+main div.container .item:nth-of-type(3n + 2){
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.item .photo img{
+    width: 100%;
+}
+
+/* elementi dentro le immagini */
+.item .heart{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 35px;
+    background-color: white;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.item .sale{
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+}
+.item .text_sale{
+    padding: 4px 11px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 12px;
+}
+.item .bg_red{
+    background-color: var(--red);
+}
+.item .bg_green{
+    background-color: var(--green);
+}
+
+/* testo sotto l'immagine */
+.item .text_red{
+    color: var(--red);
+}
+
+/* animazione con hover */
+.item .img_b{
+    display: none;
+}
+.photo:hover .img_b{
+    display: inline-block;
+    cursor: pointer;
+}
+.photo:hover .img_a{
+    display: none;
+}
+.heart:hover{
+    color: var(--red);
+    cursor: pointer;
+}
