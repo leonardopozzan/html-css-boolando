@@ -3,4 +3,55 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif, Arial, Helvetica;
 }
+:root{
+    --orange: #ff6801;
+    --black: black;
+    --green: green;
+    --red: red;
+    --white: white;
+}
+.clearfix::after{
+    content:'';
+    display: table;
+    clear: both;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+}
+
+
+/* barra di navigazione */
+.fixed{
+    position: fixed;
+    top: 0;
+}
+header .bg_orange{
+    background-color: var(--orange);
+    width: 100%;
+    box-shadow: 2px 2px 5px rgba(30,30,30,0.5);
+}
+header nav.flex{
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul.flex li{
+    list-style: none;
+}
+header nav a{
+    text-decoration: none;
+    color: var(--white);
+    padding-right: 10px;
+    font-weight: bold;
+}
+header nav .logo{
+    height: 35px;
+}
+
+/* articoli in vendita */
